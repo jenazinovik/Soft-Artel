@@ -2,7 +2,7 @@ import asyncio
 import websockets
 
 async def listen_websocket(url):
-    """Устанавливаем коннект с вебсокетом """
+    """Устанавливаем коннект с вебсокетом для подключения"""
 
     async with websockets.connect(url, open_timeout=30) as ws:
         listener_task = asyncio.create_task(receive_messages(ws))
