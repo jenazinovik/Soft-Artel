@@ -10,6 +10,7 @@ def test_sklibox_title():
     from selenium.webdriver.chrome.service import Service
     from selenium.webdriver.chrome.options import Options
     print("dasdasdsad")
+    print("Dasdas")
 
 
     options = Options()
